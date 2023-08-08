@@ -11,7 +11,7 @@ void setup()
 {
     pinMode(CPCT, OUTPUT); // it's connected to a 2N7000 so we need to control the gate, there is no pulldown resistor
     Serial.begin(115200);           // start serial port
-    Serial.println("j1850-to-serial.ino");
+    Serial.println("paddlecharge.ino");
     vpw.onError(handleError); // listen for errors
     vpw.init(RX, TX);         // init transceiver
     Serial.setTimeout(1000); // default timeout for Serial.parseInt() is 1000 ms
