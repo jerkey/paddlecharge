@@ -15,6 +15,7 @@ void setup()
     vpw.onError(handleError); // listen for errors
     vpw.init(RX, TX);         // init transceiver
     Serial.setTimeout(1000); // default timeout for Serial.parseInt() is 1000 ms
+    vpw.setActiveLevel(LOW); // the default is LOW
 }
 
 void loop()
